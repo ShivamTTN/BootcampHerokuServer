@@ -23,8 +23,8 @@ app.use(cookieParser());
 app.use(loginRouter);
 app.use(homeRouter);
 
-app.listen(port, () => {
-  console.log("Server at port : " + port);
+app.listen(process.env.PORT, () => {
+  console.log("Server at port : " + process.env.PORT);
 });
 
 module.exports = app;
