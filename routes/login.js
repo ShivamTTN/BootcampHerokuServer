@@ -11,11 +11,11 @@ router.get("/login", requiredLogin, (req, res) => {
 router.get("/fail", (req, res) => {
   //   console.log(res);
   // res.redirect("http://localhost:3000/home")
-  res.redirect("http://localhost:3000/error")
+  res.redirect("https://bootcampclient.herokuapp.com/error")
 });
 
 router.get("/success", (req, res) => {
-  res.redirect("http://localhost:3000/home");
+  res.redirect("https://bootcampclient.herokuapp.com/home");
 });
 
 router.get(
