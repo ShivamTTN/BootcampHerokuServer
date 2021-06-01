@@ -5,7 +5,7 @@ const cookieParser = require("cookie-parser");
 const cors = require("cors");
 const loginRouter = require("./routes/login");
 const homeRouter = require("./routes/home");
-const port = 8000;
+const port = 5000;
 
 var { passport } = require("./routes/PassportConfig/configuration");
 // var GoogleStrategy = require("passport-google-oauth").OAuth2Strategy;
