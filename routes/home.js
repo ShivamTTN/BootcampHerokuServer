@@ -6,6 +6,7 @@ const friendController  = require("../database/controller/friendController")
 const postController = require("../database/controller/postController")
 
 //User Controller Calls
+router.get("/",()=>{res.send("Hello")})
 router.get("/getUserData", requiredLogin,userController.getUserData);
 router.put("/updateUserData", requiredLogin,userController.updateUserData);
 
